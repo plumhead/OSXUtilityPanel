@@ -13,6 +13,9 @@
 		301879261BAFEF75009E671E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301879241BAFEF75009E671E /* Main.storyboard */; };
 		3018792E1BAFF084009E671E /* UtilityWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3018792D1BAFF084009E671E /* UtilityWindowController.swift */; settings = {ASSET_TAGS = (); }; };
 		301879301BAFF209009E671E /* UtilityPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3018792F1BAFF209009E671E /* UtilityPanelController.swift */; settings = {ASSET_TAGS = (); }; };
+		301879321BAFF9B3009E671E /* UtilityPanels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301879311BAFF9B3009E671E /* UtilityPanels.storyboard */; settings = {ASSET_TAGS = (); }; };
+		301879341BAFF9F8009E671E /* TestPanel1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301879331BAFF9F8009E671E /* TestPanel1Controller.swift */; settings = {ASSET_TAGS = (); }; };
+		301879361BAFFD5C009E671E /* TestPanel2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301879351BAFFD5C009E671E /* TestPanel2Controller.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		301879271BAFEF75009E671E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3018792D1BAFF084009E671E /* UtilityWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityWindowController.swift; sourceTree = "<group>"; };
 		3018792F1BAFF209009E671E /* UtilityPanelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityPanelController.swift; sourceTree = "<group>"; };
+		301879311BAFF9B3009E671E /* UtilityPanels.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UtilityPanels.storyboard; sourceTree = "<group>"; };
+		301879331BAFF9F8009E671E /* TestPanel1Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPanel1Controller.swift; sourceTree = "<group>"; };
+		301879351BAFFD5C009E671E /* TestPanel2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPanel2Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				301879271BAFEF75009E671E /* Info.plist */,
 				3018792D1BAFF084009E671E /* UtilityWindowController.swift */,
 				3018792F1BAFF209009E671E /* UtilityPanelController.swift */,
+				301879311BAFF9B3009E671E /* UtilityPanels.storyboard */,
+				301879331BAFF9F8009E671E /* TestPanel1Controller.swift */,
+				301879351BAFFD5C009E671E /* TestPanel2Controller.swift */,
 			);
 			path = OSXUtilityPanel;
 			sourceTree = "<group>";
@@ -126,6 +135,7 @@
 			files = (
 				301879231BAFEF75009E671E /* Assets.xcassets in Resources */,
 				301879261BAFEF75009E671E /* Main.storyboard in Resources */,
+				301879321BAFF9B3009E671E /* UtilityPanels.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +148,8 @@
 			files = (
 				3018792E1BAFF084009E671E /* UtilityWindowController.swift in Sources */,
 				301879211BAFEF75009E671E /* ViewController.swift in Sources */,
+				301879341BAFF9F8009E671E /* TestPanel1Controller.swift in Sources */,
+				301879361BAFFD5C009E671E /* TestPanel2Controller.swift in Sources */,
 				3018791F1BAFEF75009E671E /* AppDelegate.swift in Sources */,
 				301879301BAFF209009E671E /* UtilityPanelController.swift in Sources */,
 			);

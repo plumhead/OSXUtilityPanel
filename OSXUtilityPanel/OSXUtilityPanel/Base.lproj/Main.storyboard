@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -668,6 +669,47 @@
                     <view key="view" id="xmR-ha-UMr">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jz0-Qr-hdV">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <clipView key="contentView" id="acp-rg-3Pv">
+                                    <rect key="frame" x="1" y="1" width="448" height="298"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="kdd-bb-HOy">
+                                            <rect key="frame" x="0.0" y="0.0" width="448" height="298"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="448" height="298"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="448" height="298"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <animations/>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="4pH-ff-rUd">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="mMQ-vy-T0a">
+                                    <rect key="frame" x="433" y="1" width="16" height="298"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jz0-Qr-hdV" secondAttribute="bottom" id="1F6-oN-TRO"/>
+                            <constraint firstAttribute="trailing" secondItem="jz0-Qr-hdV" secondAttribute="trailing" id="W7q-RX-RGn"/>
+                            <constraint firstItem="jz0-Qr-hdV" firstAttribute="top" secondItem="xmR-ha-UMr" secondAttribute="top" id="fWx-No-oGE"/>
+                            <constraint firstItem="jz0-Qr-hdV" firstAttribute="leading" secondItem="xmR-ha-UMr" secondAttribute="leading" id="mA4-Ri-ce9"/>
+                        </constraints>
                         <animations/>
                     </view>
                 </viewController>
@@ -682,8 +724,51 @@
                     <view key="view" id="W0Z-OA-34g">
                         <rect key="frame" x="0.0" y="0.0" width="220" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQa-xb-clv">
+                                <rect key="frame" x="0.0" y="0.0" width="220" height="300"/>
+                                <clipView key="contentView" id="hIR-1o-pnP">
+                                    <rect key="frame" x="1" y="1" width="218" height="298"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" misplaced="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ZU-8O-G6h">
+                                            <rect key="frame" x="0.0" y="193" width="160" height="105"/>
+                                            <animations/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7ZU-8O-G6h" firstAttribute="top" secondItem="hIR-1o-pnP" secondAttribute="top" id="JyN-ZA-kci"/>
+                                    </constraints>
+                                    <animations/>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7ZU-8O-G6h" secondAttribute="trailing" id="5hL-W0-qcX"/>
+                                    <constraint firstItem="7ZU-8O-G6h" firstAttribute="leading" secondItem="kQa-xb-clv" secondAttribute="leading" id="vew-I5-ns9"/>
+                                </constraints>
+                                <animations/>
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="Ixf-Gf-2lj">
+                                    <rect key="frame" x="1" y="283" width="218" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="fdx-tG-z8d">
+                                    <rect key="frame" x="203" y="1" width="16" height="298"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kQa-xb-clv" secondAttribute="bottom" id="7Dx-P2-2cq"/>
+                            <constraint firstItem="kQa-xb-clv" firstAttribute="top" secondItem="W0Z-OA-34g" secondAttribute="top" id="EfP-YI-a6m"/>
+                            <constraint firstAttribute="trailing" secondItem="kQa-xb-clv" secondAttribute="trailing" id="Vv9-Th-kfS"/>
+                            <constraint firstItem="kQa-xb-clv" firstAttribute="leading" secondItem="W0Z-OA-34g" secondAttribute="leading" id="xzy-ym-Zo1"/>
+                        </constraints>
                         <animations/>
                     </view>
+                    <connections>
+                        <outlet property="utilityStack" destination="7ZU-8O-G6h" id="lSB-GX-su1"/>
+                    </connections>
                 </viewController>
                 <customObject id="E70-Yr-Osl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
