@@ -41,6 +41,14 @@ class UtilityPanelController: NSViewController {
             // Fallback on earlier versions
         }
         
+        let box2 = NSBox()
+        box2.boxType = NSBoxType.Separator
+        box2.translatesAutoresizingMaskIntoConstraints = false
+        if #available(OSX 10.11, *) {
+            self.utilityStack.addArrangedSubview(box2)
+        } else {
+            // Fallback on earlier versions
+        }
         
     }
     

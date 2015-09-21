@@ -666,11 +666,11 @@
         <scene sceneID="00p-2f-O3h">
             <objects>
                 <viewController storyboardIdentifier="Editor" id="9Mm-tU-ewY" customClass="ViewController" customModule="OSXUtilityPanel" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="xmR-ha-UMr">
+                    <view key="view" horizontalCompressionResistancePriority="751" id="xmR-ha-UMr">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jz0-Qr-hdV">
+                            <scrollView horizontalCompressionResistancePriority="751" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jz0-Qr-hdV">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <clipView key="contentView" id="acp-rg-3Pv">
                                     <rect key="frame" x="1" y="1" width="448" height="298"/>
@@ -725,13 +725,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="220" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQa-xb-clv">
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQa-xb-clv" customClass="FlippedScrollView" customModule="OSXUtilityPanel" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="220" height="300"/>
                                 <clipView key="contentView" id="hIR-1o-pnP">
                                     <rect key="frame" x="1" y="1" width="218" height="298"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" misplaced="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ZU-8O-G6h">
+                                        <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" misplaced="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ZU-8O-G6h" customClass="FlippedStackView" customModule="OSXUtilityPanel" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="193" width="160" height="105"/>
                                             <animations/>
                                         </stackView>

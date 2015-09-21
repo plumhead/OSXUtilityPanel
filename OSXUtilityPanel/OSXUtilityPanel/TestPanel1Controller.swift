@@ -8,11 +8,14 @@
 
 import Cocoa
 
-class TestPanel1Controller: NSViewController {
+class TestPanel1Controller: UtilityItemController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        collapsed = false
+        panelTitle = "Panel One"
+        
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor.orangeColor().CGColor
     }
